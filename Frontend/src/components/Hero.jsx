@@ -6,6 +6,7 @@ import { FiGithub } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 import { MdMailOutline } from "react-icons/md";
 import { Typewriter } from 'react-simple-typewriter';
+import myself from '../assets/Myself/myself.jpg';
 
 
 
@@ -41,9 +42,9 @@ const Hero = () => {
                     <div className="rounded-xl p-2 bg-white shadow-lg hover:bg-linear-to-tr from-purple-500 to-pink-500 hover:text-white hover:scale-110 active:scale-100 transition duration-300 ease-in-out border border-white"> <MdMailOutline size={30} /> </div>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-5 my-5">
-                    <div className="rounded-full w-1/2 lg:w-1/4 md:w-1/3 p-1 myself aspect-square overflow-hidden flex justify-center items-center">
+                    <div className="rounded-full w-1/2 lg:w-2/3 md:w-2/3 p-1 myself aspect-square overflow-hidden flex justify-center items-center">
                         <img
-                            src={Background}
+                            src={myself}
                             className="w-full h-full rounded-full"
                             alt=""
                         />

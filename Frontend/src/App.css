@@ -6,6 +6,7 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 
 }
 
@@ -160,4 +161,37 @@ transform:scale(1.1);
 .blink-cursor{
   animation: blink 0.5s infinite;
   display: inline-block;
+}
+
+/*.skill-grid{
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+}*/
+
+.skill-domain{
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+}
+
+.skill-card{
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 0;
+  box-shadow:0 4px 30px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+}
+.skill-card:hover{
+  background: rgba(255, 255, 255, 1);
+  box-shadow:0 8px 40px rgba(0, 0, 0, 0.2); 
+}
+.skill-card:hover .skill-icon{
+  transform: scale(1.1) !important; 
+}
+.skill-icon{
+  transition: all 0.5s ease-in-out ;
 }
