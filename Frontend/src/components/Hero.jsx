@@ -1,5 +1,4 @@
 import React from 'react'
-import Background from "../assets/Background/background.jpg";
 import { FaArrowRight } from "react-icons/fa6";
 import { IoDownloadOutline } from "react-icons/io5";
 import { FiGithub } from "react-icons/fi";
