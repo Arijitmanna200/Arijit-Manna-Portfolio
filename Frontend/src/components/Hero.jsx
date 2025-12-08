@@ -32,8 +32,8 @@ const Hero = () => {
                     <p className="text-xl text-center mt-4 text-gray-600">I craft exceptional digital experiences that blend beatiful design with powerful</p>
                     <p className="text-xl text-center text-gray-600">functionality. Let's build something amazing together</p>
                     <div className="flex flex-row justify-center gap-4 my-5">
-                        <div className="btn bg-linear-to-r from-blue-500 to-purple-500 text-white hover:bg-linear-to-r hover:from-purple-500 hover:to-blue-500 hover:scale-102 active:scale-98 transition duration-300 ease-in-out  rounded-xl w-45 h-15 text-xl">  View Work <FaArrowRight size={20} /></div>
-                        <div className="btn bg-linear-to-r from-sky-300 to-sky-50 text-gray-700 hover:bg-linear-to-r hover:from-sky-50 hover:to-sky-300 hover:scale-102 active:scale-98 transition duration-300 ease-in-out  rounded-xl w-50 h-15 text-xl"><IoDownloadOutline size={24} />Download CV</div>
+                        <div className="btn bg-linear-to-r from-blue-500 to-purple-500 text-white hover:bg-linear-to-r hover:from-purple-500 hover:to-blue-500 hover:scale-102 active:scale-98 transition duration-300 ease-in-out  rounded-xl lg:w-45 md:w-45 w-40 h-15 text-xl">  View Work <FaArrowRight size={20} /></div>
+                        <div className="btn bg-linear-to-r from-sky-300 to-sky-50 text-gray-700 hover:bg-linear-to-r hover:from-sky-50 hover:to-sky-300 hover:scale-102 active:scale-98 transition duration-300 ease-in-out  rounded-xl lg:w-50 md:w-50 w-45 h-15 text-xl"><IoDownloadOutline size={24} />Download CV</div>
                     </div>
                 </div>
                 <div className="flex flex-row justify-center gap-10 my-5">

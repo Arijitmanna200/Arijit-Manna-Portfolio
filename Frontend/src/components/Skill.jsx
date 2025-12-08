@@ -14,7 +14,7 @@ const Skill = () => {
         {
             title: "Frontend Development",
             icon: <BsPalette size={30} />,
-            themeColor : "from-blue-600 to-cyan-500",
+            themeColor: "from-blue-600 to-cyan-500",
             skillsList: [
                 { name: "HTML5", level: 90 },
                 { name: "CSS3", level: 85 },
@@ -28,7 +28,7 @@ const Skill = () => {
         {
             title: "Backend Development",
             icon: <FaServer size={30} />,
-            themeColor : "from-purple-600 to-pink-500",
+            themeColor: "from-purple-600 to-pink-500",
             skillsList: [
                 { name: "Node.js", level: 75 },
                 { name: "Express.js", level: 70 },
@@ -39,7 +39,7 @@ const Skill = () => {
         {
             title: "Tools & Platforms",
             icon: <VscTools size={30} />,
-            themeColor : "from-pink-500 to-red-600",
+            themeColor: "from-pink-500 to-red-600",
             skillsList: [
                 { name: "Git & GitHub", level: 85 },
                 { name: "Postman", level: 75 },
@@ -52,7 +52,7 @@ const Skill = () => {
         {
             title: "Database Management",
             icon: <BsDatabase size={30} />,
-            themeColor : "from-orange-500 to-yellow-600",
+            themeColor: "from-orange-500 to-yellow-600",
             skillsList: [
                 { name: "MongoDB", level: 80 },
                 { name: "MySQL", level: 70 }
@@ -62,7 +62,7 @@ const Skill = () => {
         {
             title: "Programming Languages",
             icon: <FaCode size={30} />,
-            themeColor : "from-blue-500 via-purple-500 to-red-400",
+            themeColor: "from-blue-500 via-purple-500 to-red-400",
             skillsList: [
                 { name: "c", level: 70 },
                 { name: "Java", level: 65 },
@@ -95,7 +95,7 @@ const Skill = () => {
                                     <p>{item.name}</p>
                                     <p>{item.level} %</p>
                                 </div>
-                                <div className=" rounded-2xl overflow-hidden mt-2">
+                                    <div className=" rounded-2xl overflow-hidden mt-2">
                                         <div className="h-3 bg-gray-200 rounded-2xl dark:bg-gray-700 overflow-hidden">
                                             <div className={`bg-linear-to-r ${skill.themeColor} h-3 rounded-2xl`} style={{ width: `${item.level}%` }}></div>
                                         </div>
