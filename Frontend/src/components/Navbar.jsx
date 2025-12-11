@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="sticky top-0 z-50 w-11/12 rounded-2xl flex flex-col m-auto bg-transparent backdrop-blur-2xl">
+            <div className="sticky top-0 z-50 w-full rounded-2xl flex flex-col m-auto bg-transparent backdrop-blur-2xl">
                 <div className="shadow-md rounded-2xl flex flex-row h-20 w-full">
                     <div className=" w-2/12 h-20 my-auto ms-5 "><img src={logo_without_background} alt="" height="100px" width="60px" className="my-auto pt-3" /></div>
                     <div className=" overflow-hidden flex justify-end w-full">
