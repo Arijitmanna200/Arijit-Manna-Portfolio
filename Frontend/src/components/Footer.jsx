@@ -35,7 +35,8 @@ const Footer = () => {
               <div className="rounded-xl p-2 bg-gray-800 text-gray-300 shadow-lg hover:bg-linear-to-tr from-purple-500 to-pink-500 hover:text-white hover:scale-110 active:scale-100 transition duration-300 ease-in-out w-fit"> <MdMailOutline size={25} /> </div>
             </div>
           </div>
-          <div className="flex flex-col lg:items-center md:items-center items-start w-full quick-links">
+          <div className="flex flex-row w-full border">
+          <div className="flex flex-col lg:items-center md:items-center items-center w-full quick-links">
             <h1 className="text-2xl font-bold mb-4 prof-color">Quick Links</h1>
             {quick_link.map((item, index) => (
               <a key={index} href={item.link} className="flex flex-row mb-3 gap-1  footer-link">
@@ -44,7 +45,7 @@ const Footer = () => {
             </a>
             ))}
           </div>
-          <div className="flex flex-col lg:items-center md:items-center items-start w-full connect">
+          <div className="flex flex-col lg:items-center md:items-center items-center w-full connect">
             <h1 className="text-2xl font-bold mb-4 prof-color">Connect</h1>
             {connect.map((item, index) => (
               <a key={index} href={item.link} className="flex flex-row mb-3 gap-1  footer-link">
@@ -52,6 +53,7 @@ const Footer = () => {
               <div className="m-auto text-gray-400 transition duration-300 ease-in-out footer-item"> {item.name} </div>
             </a>
             ))}
+          </div>
           </div>
         </div>
 
