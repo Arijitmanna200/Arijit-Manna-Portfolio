@@ -24,7 +24,7 @@ const Footer = () => {
     <>
 
       <div className="rounded-t-xl w-full bg-linear-to-r from-gray-900 via-blue-950 to-gray-900 text-white py-8 px-5 flex flex-col justify-center items-center gap-5  mt-5">
-        <div className=" py-0 w-full bg-linear-to-r from-gray-900 via-blue-950 to-gray-900 text-white flex flex-row gap-5">
+        <div className=" py-0 w-full bg-linear-to-r from-gray-900 via-blue-950 to-gray-900 text-white flex lg:flex-row md:flex-row flex-col gap-5">
           <div className="flex flex-col justify-start w-full self">
             <h1 className="prof-color text-3xl font-bold">Arijit Manna </h1>
             <p className="text-sm mt-4 text-gray-400">I craft exceptional digital experiences that blend beatiful design with powerful</p>
@@ -35,22 +35,28 @@ const Footer = () => {
               <div className="rounded-xl p-2 bg-gray-800 text-gray-300 shadow-lg hover:bg-linear-to-tr from-purple-500 to-pink-500 hover:text-white hover:scale-110 active:scale-100 transition duration-300 ease-in-out w-fit"> <MdMailOutline size={25} /> </div>
             </div>
           </div>
-          <div className="flex flex-col items-center w-full quick-links">
+          <div className="flex flex-col lg:items-center md:items-center items-start w-full quick-links">
             <h1 className="text-2xl font-bold mb-4 prof-color">Quick Links</h1>
             {quick_link.map((item, index) => (
-              <a key={index} href={item.link} className="mb-2 text-gray-300 hover:text-white transition duration-300 ease-in-out"> {item.name} </a>
+              <a key={index} href={item.link} className="flex flex-row mb-3 gap-1  footer-link">
+              <div className="footer-hov"></div>
+              <div className="m-auto text-gray-400 transition duration-300 ease-in-out footer-item"> {item.name} </div>
+            </a>
             ))}
           </div>
-          <div className="flex flex-col items-center w-full connect">
+          <div className="flex flex-col lg:items-center md:items-center items-start w-full connect">
             <h1 className="text-2xl font-bold mb-4 prof-color">Connect</h1>
             {connect.map((item, index) => (
-              <a key={index} href={item.link} className="mb-2 text-gray-300 hover:text-white transition duration-300 ease-in-out"> {item.name} </a>
+              <a key={index} href={item.link} className="flex flex-row mb-3 gap-1  footer-link">
+              <div className="footer-hov"></div>
+              <div className="m-auto text-gray-400 transition duration-300 ease-in-out footer-item"> {item.name} </div>
+            </a>
             ))}
           </div>
         </div>
 
         <div className="bg-gray-500 h-0.5 w-full"></div>
-        <div className="flex flex-row w-full justify-between text-sm text-gray-400 text-mono">
+        <div className="flex lg:flex-row md:flex-row flex-col w-full lg:justify-between md:justify-between justify-center items-center text-sm text-gray-400 text-mono">
 
           <p>© 2025 Arijit Manna. Made with ❤️ All rights reserved.</p>
 
