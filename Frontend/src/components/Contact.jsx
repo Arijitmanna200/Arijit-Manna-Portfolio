@@ -31,7 +31,7 @@ const Contact = () => {
     setSuccess("");
 
     try {
-      const res = await fetch("http://localhost:5000/api/mail/send-mail", {
+      const res = await fetch("https://arijit-manna-portfolio-backend.vercel.app/send-mail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
