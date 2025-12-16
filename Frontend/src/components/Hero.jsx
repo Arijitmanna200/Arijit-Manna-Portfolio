@@ -7,7 +7,7 @@ import { MdMailOutline } from "react-icons/md";
 import { Typewriter } from 'react-simple-typewriter';
 import myself from '../assets/Myself/myself.jpg';
 import { Element, Link } from "react-scroll";
-import CV from "../assets/CV/ARIJIT_MANNA_RESUME.PDF";
+import CV from "../assets/CV/ARIJIT_MANNA_RESUME.pdf";
 
 
 
