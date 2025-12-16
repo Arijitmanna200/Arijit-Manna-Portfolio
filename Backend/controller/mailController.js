@@ -1,4 +1,5 @@
 const transporter = require("../config/mailer");
+require("dotenv").config({ path: "./config.env" });
 
 exports.sendMail = async (req, res) => {
   try {
