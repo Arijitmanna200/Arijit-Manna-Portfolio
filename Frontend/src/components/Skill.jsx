@@ -4,6 +4,7 @@ import { BsDatabase } from "react-icons/bs";
 import { FaServer } from "react-icons/fa";
 import { VscTools } from "react-icons/vsc";
 import { BsPalette } from "react-icons/bs";
+import {Element} from "react-scroll";
 
 
 
@@ -72,7 +73,7 @@ const Skill = () => {
     ]
 
     return (
-        <>
+        <Element name='Skill' id='SKill'>
 
             <div className="flex justify-center items-center w-full skill-domain m-auto flex-col px-5">
                 <div className=" border border-cyan-200 bg-linear-to-r from-cyan-100 to-pink-100 rounded-3xl px-4 py-2 my-5"><h1 className="m-auto prof-color ">Skills & Expertise</h1></div>
@@ -113,7 +114,7 @@ const Skill = () => {
 
             </div>
 
-        </>
+        </Element>
     )
 }
 

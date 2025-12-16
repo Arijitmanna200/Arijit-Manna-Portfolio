@@ -3,10 +3,11 @@ import { FiGithub } from "react-icons/fi";
 import { SiGmail } from "react-icons/si";
 import { IoCall } from "react-icons/io5";
 import { FiMessageSquare } from "react-icons/fi";
+import {Element} from "react-scroll";
 
 const Contact = () => {
     return (
-        <>
+        <Element name='Contact' id='Contact'>
             <div className="flex justify-center items-center w-11/12 m-auto flex-col">
                 <div className="border border-cyan-200 bg-linear-to-r from-cyan-100 to-pink-100 rounded-3xl px-4 py-2 my-5">
                     <h1 className="m-auto prof-color">Get In Touch</h1>
@@ -44,8 +45,8 @@ const Contact = () => {
                         <div className="flex flex-col gap-3 ">
                             <h1 className="text-sm font-medium text-gray-400">Follow me on</h1>
                             <div className="flex flex-row gap-10 ms-5 mb-5">
-                                <div className="py-1 px-2 rounded-md text-md font-mono bg-gray-800 text-gray-200 hover:bg-gray-700 transition duration-300 ease-in-out">GitHub</div>
-                                <div className="py-1 px-2 rounded-md text-md font-mono bg-gray-800 text-gray-200 hover:bg-gray-700 transition duration-300 ease-in-out">Linkedin</div>
+                                <a href='https://github.com/Arijitmanna200' target='blank' className="py-1 px-2 rounded-md text-md font-mono bg-gray-800 text-gray-200 hover:bg-gray-700 transition duration-300 ease-in-out">GitHub</a>
+                                <a href='https://www.linkedin.com/in/arijit-manna-816a69246/' target='blank' className="py-1 px-2 rounded-md text-md font-mono bg-gray-800 text-gray-200 hover:bg-gray-700 transition duration-300 ease-in-out">Linkedin</a>
                             </div>
 
                         </div>
@@ -75,7 +76,7 @@ const Contact = () => {
                 </div>
 
             </div>
-        </>
+        </Element>
     )
 }
 

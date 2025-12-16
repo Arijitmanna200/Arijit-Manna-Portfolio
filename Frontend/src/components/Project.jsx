@@ -7,6 +7,7 @@ import SPORTSENSE from '../assets/project/SPORTSENSE.jpg';
 import SOCIALSPHERE from '../assets/project/SOCIALSPHERE.jpg';
 import NOTEVERSE from '../assets/project/NOTEVERSE.jpg';
 import CODEXLEARN from '../assets/project/CODEXLEARN.jpg';
+import {Element} from "react-scroll";
 
 const Project = () => {
     const autoplayRef = useRef(null);
@@ -111,6 +112,7 @@ const Project = () => {
     };
 
     return (
+        <Element name='Project' id='Project'>
         <div className="flex justify-center items-center w-11/12 m-auto flex-col">
             <div className="border border-cyan-200 bg-linear-to-r from-cyan-100 to-pink-100 rounded-3xl px-4 py-2 my-5">
                 <h1 className="m-auto prof-color">Projects</h1>
@@ -199,6 +201,7 @@ const Project = () => {
                 
             </div>
         </div>
+        </Element>
     );
 };
 

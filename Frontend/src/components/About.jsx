@@ -5,10 +5,11 @@ import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { MdOutlineElectricBolt } from "react-icons/md";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import { LuBrain } from "react-icons/lu";
+import {Element} from "react-scroll";
 
 const About = () => {
     return (
-        <>
+        <Element name='About' id='About'>
             <div className="flex justify-center items-center w-11/12 m-auto flex-col">
                 <div className=" border border-cyan-200 bg-linear-to-r from-cyan-100 to-pink-100 rounded-3xl px-4 py-2 my-5"><h1 className="m-auto prof-color ">About Me</h1></div>
                 <div className="flex flex-col justify-center w-full items-center m-auto gap-2 ">
@@ -45,7 +46,7 @@ const About = () => {
 
                 </div>
             </div>
-        </>
+        </Element>
 
     )
 }
