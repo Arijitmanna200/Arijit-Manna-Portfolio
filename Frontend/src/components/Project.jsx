@@ -18,8 +18,8 @@ const Project = () => {
             id: 1,
             img: SPORTSENSE,
             title: "SPORTSENSE",
-            description: "This is a description for SportSense ",
-            TechStack: ["React", "Node.js", "Express", "MongoDB"],
+            description: "A predictive system that forecasts whether parents would support their child in pursuing a sports career using survey data and machine learning.",
+            TechStack: ["React", "Flask", "Python"],
             githubLink: "https://github.com/Arijitmanna200/SportSense.git",
         },
         /* {
