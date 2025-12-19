@@ -13,8 +13,8 @@ const About = () => {
             <div className="flex justify-center items-center w-11/12 m-auto flex-col">
                 <div className=" border border-cyan-200 bg-linear-to-r from-cyan-100 to-pink-100 rounded-3xl px-4 py-2 my-5"><h1 className="m-auto prof-color ">About Me</h1></div>
                 <div className="flex flex-col justify-center w-full items-center m-auto gap-2 ">
-                    <h1 className="text-3xl lg:text-5xl md:text-4xl prof-color">Passionate About Building</h1>
-                    <h1 className="text-3xl lg:text-5xl md:text-4xl prof-color py-2">Digital Excellence</h1>
+                    <h1 className="text-3xl lg:text-5xl md:text-4xl prof-color text-center">Passionate About Building</h1>
+                    <h1 className="text-3xl lg:text-5xl md:text-4xl prof-color py-2 text-center">Digital Excellence</h1>
                     <p className="text-xl text-center mt-4 text-gray-600 lg:w-2/3 md:w-5/6">I'm a full-stack developer and designer with a passion for creating innovative digital solutions. I combine technical expertise with creative vision to deliver exceptional results.</p>
                 </div>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 w-11/12 mt-5  py-5">

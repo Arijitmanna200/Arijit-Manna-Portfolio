@@ -22,7 +22,7 @@ const Project = () => {
             TechStack: ["React", "Node.js", "Express", "MongoDB"],
             githubLink: "https://github.com/Arijitmanna200/SportSense.git",
         },
-         {
+        /* {
             id: 2,
             img: SOCIALSPHERE ,
             title: "SOCIALSPHERE",
@@ -46,7 +46,7 @@ const Project = () => {
             description: "This is a description for CodeXLearn",
             TechStack: ["React", "Node.js", "Express", "MongoDB"],
             githubLink: "#",
-        },
+        },*/
 
     ]);
 
