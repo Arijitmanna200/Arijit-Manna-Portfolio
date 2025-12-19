@@ -1,7 +1,11 @@
 const transporter = require("../config/mailer");
-require("dotenv").config({ path: "./config.env" });
 
-exports.sendMail = async (req, res) => {
+module.exports = async (req, res) => {
+  // Allow only POST
+  if (req.method !== "POST") {
+    return res.status(405).json({ message: "Method Not Allowed" });
+  }
+
   try {
     const { name, email, subject, message } = req.body;
 
@@ -14,7 +18,7 @@ exports.sendMail = async (req, res) => {
 
     const mailOptions = {
       from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
-      to: process.env.EMAIL_USER, // your inbox
+      to: process.env.EMAIL_USER,
       replyTo: email,
       subject: subject || `New message from ${name}`,
       html: `
@@ -28,14 +32,14 @@ exports.sendMail = async (req, res) => {
 
     await transporter.sendMail(mailOptions);
 
-    res.status(200).json({
+    return res.status(200).json({
       success: true,
       message: "Email sent successfully",
     });
 
   } catch (error) {
     console.error("Mail error:", error);
-    res.status(500).json({
+    return res.status(500).json({
       success: false,
       message: "Email sending failed",
     });
