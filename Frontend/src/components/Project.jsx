@@ -20,8 +20,7 @@ const Project = () => {
             title: "SPORTSENSE",
             description: "This is a description for SportSense ",
             TechStack: ["React", "Node.js", "Express", "MongoDB"],
-            githubLink: "https://github.com/Arijitmanna200",
-            liveDemoLink: "https://arijitmanna200.github.io/"
+            githubLink: "https://github.com/Arijitmanna200/SportSense.git",
         },
          {
             id: 2,
@@ -29,8 +28,7 @@ const Project = () => {
             title: "SOCIALSPHERE",
             description: "This is a description for SocialSphere ",
             TechStack: ["React", "Node.js", "Express", "MongoDB"],
-            githubLink: "https://github.com/Arijitmanna200",
-            liveDemoLink: "https://arijitmanna200.github.io/"
+            githubLink: "#",
 
         },
         {
@@ -39,8 +37,7 @@ const Project = () => {
             title: "NOTEVERSE",
             description: "This is a description for NoteVerse",
             TechStack: ["React", "Node.js", "Express", "MongoDB"],
-            githubLink: "https://github.com/Arijitmanna200",
-            liveDemoLink: "https://arijitmanna200.github.io/"
+            githubLink: "#",
         },
         {
             id: 4,
@@ -48,8 +45,7 @@ const Project = () => {
             title: "CODEXLEARN",
             description: "This is a description for CodeXLearn",
             TechStack: ["React", "Node.js", "Express", "MongoDB"],
-            githubLink: "https://github.com/Arijitmanna200",
-            liveDemoLink: "https://arijitmanna200.github.io/"
+            githubLink: "#",
         },
 
     ]);
@@ -174,8 +170,6 @@ const Project = () => {
                                     </div>
                                     <div className="flex lg:flex-row md:flex-row flex-col w-fit lg:gap-5 md:gap-4 gap-2 lg:mt-5 md:mt-3 mt-2 font-mono">
                                         <a href={slide.githubLink} target="_blank" rel="noopener noreferrer" className="project-link w-fit"><div className="flex gap-2 flex-row items-center justify-center w-fit"> Code <LuGithub size={20} /></div></a>
-                                        <a href={slide.liveDemoLink} target="_blank" rel="noopener noreferrer" className="project-link w-fit"><div className="flex gap-2 flex-row items-center justify-center w-fit"> Live Demo <FaRegEye size={20} /></div></a>
-
                                     </div>
                                 </div>
                             </li>)
